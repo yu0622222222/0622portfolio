@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 | Portfolio</title>
+    <meta name="description" content="個人作品集網站，展示我的專案與技能。">
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 頂部導航欄 -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Logo / Name</a>
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link">首頁 Home</a>
+                <a href="#about" class="nav-link">關於 About</a>
+                <a href="#portfolio" class="nav-link">作品 Portfolio</a>
+                <a href="#services" class="nav-link">服務 Services</a>
+                <a href="#contact" class="nav-link">聯絡 Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="開啟選單">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首頁主視覺區 -->
+        <section id="hero" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="headline">打造流暢、極簡的數位體驗</h1>
+                    <p class="sub-headline">專注於前端開發與 UI 設計，將概念轉化為充滿質感與互動性的網頁作品。</p>
+                    <a href="#portfolio" class="cta-button">查看作品</a>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder large-placeholder">
+                        <span>主視覺意象 (Hero Image)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 關於我與專長區 -->
+        <section id="about" class="about section bg-light">
+            <div class="container about-container">
+                <div class="about-image">
+                    <div class="placeholder medium-placeholder">
+                        <span>個人照 (Profile Image)</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">關於我 <span>About Me</span></h2>
+                    <p class="about-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="skills">
+                        <h3 class="skills-title">專業技能 Skills</h3>
+                        <div class="tags">
+                            <span class="tag">UI/UX Design</span>
+                            <span class="tag">HTML5 / CSS3</span>
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">React / Vue</span>
+                            <span class="tag">Responsive Web Design</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品集網格區 -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">精選作品 <span>Selected Works</span></h2>
+                    <p class="section-subtitle">這裡展示了我近期的設計與開發專案。</p>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image placeholder project-placeholder">
+                            <span>專案縮圖 1</span>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Design</span>
+                            <h3 class="project-title">品牌電商網站重構</h3>
+                            <p class="project-desc">重新設計並開發電商網站前端，提升使用者購物體驗與轉換率。</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image placeholder project-placeholder">
+                            <span>專案縮圖 2</span>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">UI/UX</span>
+                            <h3 class="project-title">財務管理 App 介面設計</h3>
+                            <p class="project-desc">以極簡風格打造易於閱讀的數據圖表與財務追蹤介面。</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image placeholder project-placeholder">
+                            <span>專案縮圖 3</span>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Front-end</span>
+                            <h3 class="project-title">互動式活動宣傳頁</h3>
+                            <p class="project-desc">使用豐富的滾動動畫與微互動，為行銷活動打造吸睛的登陸頁面。</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-image placeholder project-placeholder">
+                            <span>專案縮圖 4</span>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Branding</span>
+                            <h3 class="project-title">科技新創企業識別</h3>
+                            <p class="project-desc">從 Logo 到網站的一系列品牌視覺規範與數位應用。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡區塊 (簡單示意) -->
+        <section id="contact" class="contact section bg-dark">
+            <div class="container text-center">
+                <h2 class="section-title">準備好開始合作了嗎？</h2>
+                <p>歡迎隨時與我聯繫，討論您的下一個專案。</p>
+                <a href="mailto:hello@example.com" class="cta-button cta-light">與我聯絡</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Logo / Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
