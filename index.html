@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,83 +8,76 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- 使用 Archivo Black 作為標題字體，Inter 作為內文字體 -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alien+Block&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pliant:wght@900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- 導航列 -->
     <header class="header">
         <a href="#hero" class="logo">corm</a>
         <nav class="nav">
-            <a href="#about">Home</a>
-            <a href="#about">About</a>
-            <a href="#overview">Works</a>
-            <a href="#contact">Contact</a>
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#works-index" class="nav-link">Works</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
 
     <main>
         <!-- 區塊一：主視覺 (Hero) -->
         <section id="hero" class="hero-section">
-            <div class="hero-placeholder">
+            <div class="hero-background">
+                <img src="source/Introbanner/hero_bw_final.png" alt="Hero Background BW" class="hero-bg-img hero-img-base">
+                <img src="source/Introbanner/hero_color_final.jpg" alt="Hero Background Color" class="hero-bg-img hero-img-fade">
                 <span class="hero-text-overlay">CORM</span>
-                <span class="hero-desc">(Background Graphic Placeholder)</span>
+                <div class="hero-bottom-text">
+                    <h2 class="hero-name-left">王予呈 YU CHENG</h2>
+                    <p class="hero-desc-right">A collection of graphic design essays,<br>3D renders, and interactive media storytelling.</p>
+                </div>
             </div>
         </section>
 
-        <!-- 區塊二：自我介紹 (Self Intro - Split Layout) -->
-        <section id="about" class="split-section">
-            <div class="split-left">
-                <h1 class="huge-text">SELF<br>INTRODUCTION</h1>
-                
-                <div class="intro-text">
-                    <p class="zh">你好，我是王予呈。<br><br>目前就讀媒體傳達設計系大一。對我而言，設計是一場在繁複世界中去蕪存菁的過程。我目前在嘗試數位插畫、動態影像及 3D 空間構築，透過視覺語彙去傳遞核心情感。目前特別關注與社會議題、生命經驗相關的視覺實驗，期許自己能透過跨媒介的嘗試，創作出富含思維深度的作品。</p>
-                    <p class="en">Hi, I'm Yu-Cheng, a freshman majoring in Communications Design. To me, design is a process of cutting through the noise of a chaotic world. I am currently exploring digital illustration, motion graphics, and 3D space creation to convey core human emotions. Focusing on visual experiments inspired by social issues and life narratives, I aim to craft multi-disciplinary works with conceptual depth.</p>
-                </div>
-                
-                <div class="dots-indicator">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
+        <!-- 區塊二：自我介紹 (Self Intro Creative Layout) -->
+        <section id="about" class="about-creative-section reveal">
+            <div class="bg-grid">
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
             </div>
-            
-            <div class="split-right">
-                <p class="en-side-text">Driven by conceptual depth.</p>
-                
-                <!-- 跨越邊界的貓咪插圖佔位 -->
-                <div class="overlapping-cat placeholder placeholder-outline">
-                    <span>(Cat Illustration Overlapping)</span>
-                </div>
-                
-                <p class="en-side-bottom">Built through late-night renders.</p>
-            </div>
-        </section>
 
-        <!-- 區塊三：專案總覽 (Project Overview) -->
-        <section id="overview" class="overview-section">
-            <!-- WORK 文字遮罩圖案 -->
-            <div class="text-mask-banner">
-                <h2 class="mask-text">WORK</h2>
+            <div class="about-right-black">
+                <div class="dots top-dots">...</div>
+                <div class="driven-text">Driven by concepts.</div>
             </div>
-            
-            <div class="overview-info">
-                <div class="overview-title">
-                    <h2 class="section-heading">PROJECT<br>OVERVIEW</h2>
+
+            <div class="about-content-wrapper">
+                <div class="about-titles">
+                    <h1 class="huge-text-self">SELF</h1>
+                    <h1 class="huge-text-intro">INTRODUCTION</h1>
                 </div>
-                <div class="overview-details">
-                    <ul class="detail-list">
-                        <li><strong>Year：</strong> 2025~2026</li>
-                        <li><strong>Category：</strong>
-                            <ul>
-                                <li>海報：平面設計 / 社會議題 (Graphic Design / Social Issue)</li>
-                                <li>動畫：動態影像 / 2D 動畫 (Motion Graphics / 2D Animation)</li>
-                                <li>3D建模：Blender / 空間構築 (Environment Design)</li>
-                                <li>人體素描：視覺藝術 / 基礎訓練 (Visual Art / Life Drawing)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Tools：</strong> Photoshop / Illustrator / Blender / Premiere Pro / 炭筆</li>
-                    </ul>
+
+                <div class="about-body">
+                    <div class="about-text-column">
+                        <p class="zh">你好，我是王予呈。<br><br>目前就讀媒體傳達設計系大一。對我而言，設計是一場在繁複世界中去蕪存菁的過程。我目前在嘗試數位插畫、動態影像及 3D
+                            空間構築，透過視覺語彙去傳遞核心情感。目前特別關注與社會議題、生命經驗相關的視覺實驗，期許自己能透過跨媒介的嘗試，創作出富含思維深度的作品。</p>
+                        <p class="en">Hi, I'm Yu-Cheng, a freshman majoring in Communications Design. To me, design is a
+                            process of cutting through the noise of a chaotic world. I am currently exploring digital
+                            illustration, motion graphics, and 3D space creation to convey core human emotions. Focusing
+                            on visual experiments inspired by social issues and life narratives, I aim to craft
+                            multi-disciplinary works with conceptual depth.</p>
+                        <div class="bottom-footer-row">
+                            <div class="dots bottom-dots">...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cat-wrapper">
+                    <img src="source/蚊子與貓/new_cat_2.png" alt="Cat Illustration" class="about-cat-img-creative">
+                    <div class="built-text">Built through late-night renders.</div>
                 </div>
             </div>
         </section>
@@ -94,7 +88,8 @@
             <div class="index-grid">
                 <a href="#project-1" class="index-link">
                     <span class="index-num">01 /</span> 漸凍症 Amyotrophic Lateral Sclerosis
-                    <span class="index-desc">以留白與微觀解構生命痛處<br>Deconstructing life narratives through negative space.</span>
+                    <span class="index-desc">以留白與微觀解構生命痛處<br>Deconstructing life narratives through negative
+                        space.</span>
                 </a>
                 <a href="#project-2" class="index-link">
                     <span class="index-num">02 /</span> 蚊子 mosquito
@@ -108,6 +103,10 @@
                     <span class="index-num">04 /</span> 房子建模 blender
                     <span class="index-desc">數位線條與光影的空間構築。<br>Constructing 3D space with light and texture.</span>
                 </a>
+                <a href="#project-5" class="index-link">
+                    <span class="index-num">05 /</span> 其他練習作品 other works
+                    <span class="index-desc">日常觀察與多媒材實驗紀錄。<br>Daily observations and mixed media experiments.</span>
+                </a>
             </div>
         </section>
 
@@ -116,53 +115,139 @@
             <div class="marquee-container">
                 <div class="marquee-content">
                     <!-- 原始組 -->
-                    <div class="carousel-card placeholder placeholder-light"><span>(Slide 1)</span></div>
-                    <div class="carousel-card placeholder placeholder-dark"><span>(Slide 2)</span></div>
-                    <div class="carousel-card placeholder placeholder-blue"><span>(Slide 3)</span></div>
-                    <div class="carousel-card placeholder placeholder-red"><span>(Slide 4)</span></div>
+                    <img src="source/其他練習作品/new_work_1.png" alt="Slide New 1" class="carousel-card">
+                    <img src="source/其他練習作品/new_work_2.jpg" alt="Slide New 2" class="carousel-card">
+                    <img src="source/其他練習作品/new_work_3.jpg" alt="Slide New 3" class="carousel-card">
+                    <img src="source/其他練習作品/new_work_4.png" alt="Slide New 4" class="carousel-card">
+                    <img src="source/其他練習作品/a114141041.jpg" alt="Slide 1" class="carousel-card">
+                    <img src="source/其他練習作品/數位編輯3-7-02.jpg" alt="Slide 2" class="carousel-card">
+                    <img src="source/其他練習作品/193363_0.jpg" alt="Slide 4" class="carousel-card">
                     <!-- 重複組 (為了無限滾動無縫銜接) -->
-                    <div class="carousel-card placeholder placeholder-light"><span>(Slide 1)</span></div>
-                    <div class="carousel-card placeholder placeholder-dark"><span>(Slide 2)</span></div>
-                    <div class="carousel-card placeholder placeholder-blue"><span>(Slide 3)</span></div>
-                    <div class="carousel-card placeholder placeholder-red"><span>(Slide 4)</span></div>
+                    <img src="source/其他練習作品/new_work_1.png" alt="Slide New 1" class="carousel-card">
+                    <img src="source/其他練習作品/new_work_2.jpg" alt="Slide New 2" class="carousel-card">
+                    <img src="source/其他練習作品/new_work_3.jpg" alt="Slide New 3" class="carousel-card">
+                    <img src="source/其他練習作品/new_work_4.png" alt="Slide New 4" class="carousel-card">
+                    <img src="source/其他練習作品/a114141041.jpg" alt="Slide 1" class="carousel-card">
+                    <img src="source/其他練習作品/數位編輯3-7-02.jpg" alt="Slide 2" class="carousel-card">
+                    <img src="source/其他練習作品/193363_0.jpg" alt="Slide 4" class="carousel-card">
                 </div>
             </div>
         </section>
 
         <!-- 區塊五：作品詳細展示 (延續之前的瀑布流設計) -->
         <section class="works-detail-section">
-            
+
             <!-- Project 1: ALS -->
             <article id="project-1" class="project reveal">
                 <div class="project-header">
                     <h2 class="project-title">ALS SOCIAL ISSUES POSTERS</h2>
                 </div>
-                <div class="project-layout layout-masonry-1">
-                    <div class="grid-item img-main placeholder placeholder-dark"><span>(Hand Illustration)</span></div>
-                    <div class="grid-item img-side placeholder placeholder-light"><span>(Spine Illustration)</span></div>
-                    <div class="grid-item img-side-2 placeholder placeholder-light"><span>(Embrace Illustration)</span></div>
-                    <div class="grid-item text-block">
-                        <p class="zh">創作用意在於傳遞漸凍症病人的切身感受：逐漸失去身體的主控權、脊椎變形...</p>
-                        <p class="en">Rooted in my experience of caring for an ALS family member: Witnessing the fading strength in their limbs and spine inspired me to use the imagery of fluid loss to manifest the fear of ultimate departure.</p>
+                <div class="als-creative-container">
+                    <div class="als-left-posters">
+                        <div class="als-poster-main">
+                            <img src="source/漸凍症/Taiwan_Wang_Yu-Cheng_StillMe.jpg" alt="ALS Poster 1">
+                        </div>
+                        <div class="als-poster-stack">
+                            <img src="source/漸凍症/Taiwan_Wang_Yu-Cheng_I see you.jpg" alt="ALS Poster 2">
+                            <img src="source/漸凍症/Taiwan_Wang_Yu-Cheng_I am here.jpg" alt="ALS Poster 3">
+                        </div>
+                    </div>
+
+                    <div class="als-right-content">
+                        <div class="als-text-block">
+                            <p class="zh">
+                                創作源於陪伴罹病家人的切身經歷。當我看著家人的四肢與脊椎漸漸無力、身體失控後仰，那種終將失去的恐懼，促使我以液體消逝的意象作為視覺起點。作品紀錄了直面病痛時、陪伴者最深沉的無力感，並試圖將這份說不出的心疼，轉化為視覺上的一記擁抱。
+                            </p>
+                            <p class="en">Rooted in my experience of caring for an ill family member. Witnessing the
+                                fading strength in their limbs and spine inspired me to use the imagery of fluid loss to
+                                manifest the fear of ultimate departure. The piece captures a caregiver’s profound
+                                helplessness, translating unspoken pain into a visual embrace.</p>
+                        </div>
+
+                        <div class="als-grid-gallery">
+                            <img src="source/漸凍症/drip2.png" alt="Drip Graphic">
+                            <img src="source/漸凍症/文字2-0.png" alt="Still Me Text">
+                            <img src="source/漸凍症/i_see_you.png" alt="I See You Text">
+
+                            <img src="source/漸凍症/starry_hand_new.png" alt="Starry Hand">
+                            <img src="source/漸凍症/skeleton2.png" alt="Skeleton Hand">
+                            <img src="source/漸凍症/線條‎.png" alt="Sketch">
+                        </div>
                     </div>
                 </div>
             </article>
 
             <!-- Project 2: MOSQUITO -->
             <article id="project-2" class="project reveal">
-                <div class="project-header">
-                    <h2 class="project-title">MOSQUITO</h2>
-                </div>
-                <div class="project-layout layout-grid-2">
-                    <div class="grid-item text-block span-full">
-                        <p class="zh">以家中三隻貓咪的日常生活為靈感，將細微的動態轉化為幽默的動畫...</p>
-                        <p class="en">Driven by daily observation of my three cats. This animation translates routine movements into dynamic visual storytelling...</p>
+                <div class="mosquito-layout-top"
+                    style="display: flex; gap: 3rem; align-items: center; margin-bottom: 2rem;">
+                    <div class="mosquito-text" style="flex: 1;">
+                        <h2 class="project-title" style="border: none; padding: 0; margin-bottom: 1.5rem;">MOSQUITO</h2>
+                        <p class="zh" style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">
+                            以家中三隻貓咪的日常生活為靈感，將細碎的觀察轉化為動態分鏡實驗。在流暢的幀率與輕快節奏中，幽默捕捉貓隻與蚊子的趣味對峙，探討日常動態在影像敘事中的可能性。</p>
+                        <p class="en" style="font-size: 0.9rem; color: #666; line-height: 1.5;">Driven by daily
+                            observation of my three cats. This animation translates routine movements into dynamic
+                            visual storytelling, capturing the playful and witty battle between feline and insect.</p>
                     </div>
-                    <div class="grid-item img-wide placeholder placeholder-light"><span>(Cat Sleeping)</span></div>
-                    <div class="grid-item img-small placeholder placeholder-outline"><span>(Sketches)</span></div>
-                    <div class="grid-item img-small placeholder placeholder-dark"><span>(Mosquito)</span></div>
-                    <div class="grid-item img-medium placeholder placeholder-blue"><span>(Cat Walking)</span></div>
-                    <div class="grid-item img-medium placeholder placeholder-outline"><span>(Cat Rolling)</span></div>
+                    <div class="mosquito-main-img" style="flex: 1.5;">
+                        <img src="source/蚊子與貓/sleeping_cat.png" alt="Sleeping Cat"
+                            style="width: 100%; object-fit: contain;">
+                    </div>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid #ddd; margin-bottom: 2rem;">
+
+                <style>
+                    .mosquito-flex-gallery {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 1.5rem;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .mosquito-flex-gallery img {
+                        flex: 1 1 auto;
+                        height: 180px;
+                        max-width: 100%;
+                        object-fit: contain;
+                        cursor: pointer;
+                        transition: transform 0.2s ease;
+                    }
+
+                    .mosquito-flex-gallery img:hover {
+                        transform: scale(1.05);
+                    }
+
+                    @media (max-width: 768px) {
+                        .mosquito-flex-gallery img {
+                            height: 120px;
+                        }
+
+                        .mosquito-layout-top {
+                            flex-direction: column-reverse;
+                            gap: 1.5rem;
+                        }
+                    }
+                </style>
+
+                <div class="mosquito-flex-gallery">
+                    <img src="source/蚊子與貓/upside_down_cat_new.png" alt="Gallery">
+                    <img src="source/蚊子與貓/插圖3.jpg" alt="Gallery">
+                    <img src="source/蚊子與貓/bored_cat_new.png" alt="Gallery">
+                    <img src="source/蚊子與貓/single_mosquito.png" alt="Gallery">
+                    <img src="source/蚊子與貓/new_cat_faces.jpg" alt="Gallery">
+                    <img src="source/蚊子與貓/螢幕擷取畫面 2026-06-21 223419.png" alt="Gallery">
+
+                    <img src="source/蚊子與貓/螢幕擷取畫面 2026-06-21 010645.png" alt="Gallery">
+                    <img src="source/蚊子與貓/螢幕擷取畫面 2026-06-21 223227.png" alt="Gallery">
+                    <img src="source/蚊子與貓/螢幕擷取畫面_2026-06-21_223311-removebg-preview.png" alt="Gallery">
+                    <img src="source/蚊子與貓/cracked_glass_cat.png" alt="Gallery">
+                    <img src="source/蚊子與貓/螢幕擷取畫面 2026-06-21 223129.png" alt="Gallery">
+
+                    <img src="source/蚊子與貓/mosquito_vs_cat.png" alt="Gallery">
+                    <img src="source/蚊子與貓/螢幕擷取畫面 2026-06-21 223341.png" alt="Gallery">
+                    <img src="source/蚊子與貓/螢幕擷取畫面 2026-06-21 223202.png" alt="Gallery">
                 </div>
             </article>
 
@@ -171,27 +256,228 @@
                 <div class="project-header">
                     <h2 class="project-title">NUDE MODEL</h2>
                 </div>
-                <div class="project-layout layout-editorial-3">
-                    <div class="grid-item text-block">
-                        <p class="zh">歷時一整年的人體寫生訓練。在長時間的靜態觀察中，追求形體的精準度...</p>
-                        <p class="en">A yearlong study in life drawing. Driven by a growing fascination with muscular tension and human anatomy, this series explores dynamic bodily forms and organic line work in space.</p>
+                <div class="draft-layout-top">
+                    <img src="source/設計繪畫/ink_painting.jpg" alt="Ink Painting Figures">
+                </div>
+                <div class="draft-layout-bottom">
+                    <style>
+                        .marquee-column-wrapper {
+                            flex: 2;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5rem;
+                            overflow: hidden;
+                        }
+
+                        .local-marquee {
+                            width: 100%;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .local-marquee-content {
+                            display: flex;
+                            gap: 1rem;
+                            animation: scroll 15s linear infinite; /* 加速 */
+                            padding-right: 1rem;
+                            width: max-content;
+                        }
+                        
+                        .local-marquee-content.reverse {
+                            animation: scroll-reverse 40s linear infinite;
+                        }
+
+                        @keyframes scroll-reverse {
+                            0% { transform: translateX(-50%); }
+                            100% { transform: translateX(0); }
+                        }
+
+                        .local-marquee:hover .local-marquee-content {
+                            animation-play-state: paused;
+                        }
+
+                        .local-marquee-content img {
+                            height: 350px;
+                            flex: 0 0 auto;
+                            object-fit: cover;
+                            border-radius: 4px;
+                            cursor: pointer;
+                        }
+
+                        @media (max-width: 768px) {
+                            .local-marquee-content img { height: 200px; }
+                        }
+                    </style>
+                    <div class="marquee-column-wrapper">
+                        <!-- 第一條畫廊：放新上傳的5張圖 -->
+                        <div class="local-marquee">
+                            <div class="local-marquee-content">
+                                <!-- 為了避免寬螢幕出現斷層，我們重複4組來確保總長度足夠無縫接軌 -->
+                                <!-- Set 1 -->
+                                <img src="source/設計繪畫/nude_series_1.jpg" alt="Nude Series 1">
+                                <img src="source/設計繪畫/nude_series_2.jpg" alt="Nude Series 2">
+                                <img src="source/設計繪畫/nude_series_3.jpg" alt="Nude Series 3">
+                                <img src="source/設計繪畫/nude_series_4.jpg" alt="Nude Series 4">
+                                <img src="source/設計繪畫/nude_series_5.jpg" alt="Nude Series 5">
+                                <!-- Set 2 -->
+                                <img src="source/設計繪畫/nude_series_1.jpg" alt="Nude Series 1">
+                                <img src="source/設計繪畫/nude_series_2.jpg" alt="Nude Series 2">
+                                <img src="source/設計繪畫/nude_series_3.jpg" alt="Nude Series 3">
+                                <img src="source/設計繪畫/nude_series_4.jpg" alt="Nude Series 4">
+                                <img src="source/設計繪畫/nude_series_5.jpg" alt="Nude Series 5">
+                                <!-- Set 3 -->
+                                <img src="source/設計繪畫/nude_series_1.jpg" alt="Nude Series 1">
+                                <img src="source/設計繪畫/nude_series_2.jpg" alt="Nude Series 2">
+                                <img src="source/設計繪畫/nude_series_3.jpg" alt="Nude Series 3">
+                                <img src="source/設計繪畫/nude_series_4.jpg" alt="Nude Series 4">
+                                <img src="source/設計繪畫/nude_series_5.jpg" alt="Nude Series 5">
+                                <!-- Set 4 -->
+                                <img src="source/設計繪畫/nude_series_1.jpg" alt="Nude Series 1">
+                                <img src="source/設計繪畫/nude_series_2.jpg" alt="Nude Series 2">
+                                <img src="source/設計繪畫/nude_series_3.jpg" alt="Nude Series 3">
+                                <img src="source/設計繪畫/nude_series_4.jpg" alt="Nude Series 4">
+                                <img src="source/設計繪畫/nude_series_5.jpg" alt="Nude Series 5">
+                            </div>
+                        </div>
+
+                        <!-- 第二條畫廊：換成最新上傳的圖一到圖五 -->
+                        <div class="local-marquee">
+                            <div class="local-marquee-content reverse" style="animation-duration: 20s;">
+                                <!-- 同樣重複4組來確保無縫接軌 -->
+                                <!-- Set 1 -->
+                                <img src="source/設計繪畫/tape_series_1.jpg" alt="Tape Series 1">
+                                <img src="source/設計繪畫/tape_series_2.jpg" alt="Tape Series 2">
+                                <img src="source/設計繪畫/tape_series_3.jpg" alt="Tape Series 3">
+                                <img src="source/設計繪畫/tape_series_4.jpg" alt="Tape Series 4">
+                                <img src="source/設計繪畫/tape_series_5.jpg" alt="Tape Series 5">
+                                <!-- Set 2 -->
+                                <img src="source/設計繪畫/tape_series_1.jpg" alt="Tape Series 1">
+                                <img src="source/設計繪畫/tape_series_2.jpg" alt="Tape Series 2">
+                                <img src="source/設計繪畫/tape_series_3.jpg" alt="Tape Series 3">
+                                <img src="source/設計繪畫/tape_series_4.jpg" alt="Tape Series 4">
+                                <img src="source/設計繪畫/tape_series_5.jpg" alt="Tape Series 5">
+                                <!-- Set 3 -->
+                                <img src="source/設計繪畫/tape_series_1.jpg" alt="Tape Series 1">
+                                <img src="source/設計繪畫/tape_series_2.jpg" alt="Tape Series 2">
+                                <img src="source/設計繪畫/tape_series_3.jpg" alt="Tape Series 3">
+                                <img src="source/設計繪畫/tape_series_4.jpg" alt="Tape Series 4">
+                                <img src="source/設計繪畫/tape_series_5.jpg" alt="Tape Series 5">
+                                <!-- Set 4 -->
+                                <img src="source/設計繪畫/tape_series_1.jpg" alt="Tape Series 1">
+                                <img src="source/設計繪畫/tape_series_2.jpg" alt="Tape Series 2">
+                                <img src="source/設計繪畫/tape_series_3.jpg" alt="Tape Series 3">
+                                <img src="source/設計繪畫/tape_series_4.jpg" alt="Tape Series 4">
+                                <img src="source/設計繪畫/tape_series_5.jpg" alt="Tape Series 5">
+                            </div>
+                        </div>
                     </div>
-                    <div class="grid-item img-portrait placeholder placeholder-red"><span>(Red Dress Model)</span></div>
-                    <div class="grid-item img-vertical placeholder placeholder-outline"><span>(Quick Sketches)</span></div>
-                    <div class="grid-item img-row placeholder placeholder-dark"><span>(Charcoal Poses)</span></div>
-                    <div class="grid-item img-row placeholder placeholder-light"><span>(Action Sketches)</span></div>
+                    <div class="bottom-right-text" style="flex: 1;">
+                        <p class="zh">
+                            過程分為速寫與長時間觀察：前者著重於瞬時精準捕捉肢體比例；後者則引導我剝離表面線條，深入凝視肌肉出力與放鬆時的動態張力。這堂課使我學會以全新視角解構實體世界的力量架構。</p>
+                        <p class="en">A year-long training in charcoal and line drawing. The process balances gesture
+                            sketching and long-duration observation: the former captures precise body proportions in
+                            moments, while the latter guides me beyond surface details to analyze the dynamic tension of
+                            muscles contracting and relaxing. Through this, I learned to deconstruct the structural
+                            forces of the physical world.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: BLENDER -->
+            <article id="project-4" class="project reveal">
+                <div class="project-header">
+                    <h2 class="project-title">BLENDER 3D MODELING</h2>
+                </div>
+                <div class="draft-layout-top">
+                    <img src="source/blender練習作品/magic_room.jpg" alt="Blender Magic Room">
+                </div>
+                <div class="draft-layout-bottom" style="align-items: stretch;">
+                    <div class="bottom-left-gallery" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 1rem;">
+                        <img src="source/blender練習作品/blender_new_grid_1.png" alt="Blender Grid 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block;">
+                        <img src="source/blender練習作品/blender_new_grid_2.png" alt="Blender Grid 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block;">
+                        <img src="source/blender練習作品/blender_new_grid_3.png" alt="Blender Grid 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block;">
+                        <img src="source/blender練習作品/blender_new_grid_4.png" alt="Blender Grid 4" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block;">
+                    </div>
+                    <div class="bottom-right-text" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <p class="zh">這是開學至今投入最多心力、也最感興趣的領域。從零基礎開始摸索，即使無數次的作業過程極度繁重，場景從無到有建立起來的純粹樂趣，仍讓我不管多累都想繼續做下去。對我而言，3D 建模已不僅僅是交差，而是驅使我將想像轉化為<span style="white-space: nowrap;">實體的真正熱忱。</span></p>
+                            <p class="en">The area I have invested in the most and found most captivating since day one. Starting from absolute zero, despite the endless and grueling assignments, the pure joy of building a scene from nothing keeps me pushing forward no matter how exhausted I am. Modeling has become far more than a task—it is the true passion driving me to turn imagination into reality.</p>
+                        </div>
+                        <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                            <img src="source/blender練習作品/blender_new_1.jpg" alt="Blender Detail 1" style="width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: 6px; display: block;">
+                            <img src="source/blender練習作品/blender_new_2.jpg" alt="Blender Detail 2" style="width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: 6px; display: block;">
+                            <img src="source/blender練習作品/blender_new_3.jpg" alt="Blender Detail 3" style="width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: 6px; display: block;">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5: OTHER WORKS -->
+            <article id="project-5" class="project reveal">
+                <div class="project-header">
+                    <h2 class="project-title">OTHER WORKS</h2>
+                </div>
+                <div class="draft-layout-top">
+                    <img src="source/其他練習作品/board_game_final.jpg" alt="Other Work Main">
+                </div>
+                <div class="draft-layout-bottom">
+                    <div class="bottom-left-gallery" style="grid-template-columns: repeat(4, 1fr);">
+                        <img src="source/其他練習作品/new_other_1.jpg" alt="Other Work 1">
+                        <img src="source/其他練習作品/new_other_2.jpg" alt="Other Work 2">
+                        <img src="source/其他練習作品/new_other_3.jpg" alt="Other Work 3">
+                        <img src="source/其他練習作品/new_other_4.jpg" alt="Other Work 4">
+                    </div>
+                    <div class="bottom-right-text">
+                        <p class="zh">這是大一以來從零摸索的作品紀錄。在繁重習作中，我學會剝離表面，去凝視結構的力量與動態；並在疲憊中直面陪伴者的無力，將真實心疼轉化為視覺。這些嘗試，是我將直覺與情感提煉為<span style="white-space: nowrap;">實體設計的熱忱起點。</span></p>
+                        <p class="en">A record of my work and insights since freshman year, built from absolute zero. Through grueling assignments, I learned to look beyond the surface to grasp structural tension, transforming personal, helpless empathy into visual forms. These trials mark the raw beginning of my passion for turning intuition into reality.</p>
+                    </div>
                 </div>
             </article>
 
         </section>
     </main>
 
-    <footer id="contact" class="footer reveal">
-        <h2 class="huge-text footer-title">let's create<br>together.</h2>
-        <a href="mailto:hello@example.com" class="email-link">hello@example.com</a>
-        <p class="copyright">&copy; 2026 Yu-Cheng. All rights reserved.</p>
+    <!-- 聯絡資訊 -->
+    <footer id="contact" class="custom-footer reveal">
+        <div class="shapes top-left">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <rect width="24" height="24" fill="white" />
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="12" fill="white" />
+            </svg>
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-label">Contact Information</div>
+            <div class="contact-divider"></div>
+            <div class="contact-details">
+                <a href="mailto:A114141041@gm2.usc.edu.tw">Gmail : A114141041@gm2.usc.edu.tw</a>
+                <a href="https://instagram.com/csummer_wyc" target="_blank">instagram : csummer_wyc</a>
+            </div>
+        </div>
+
+        <div class="shapes bottom-right">
+            <svg width="28" height="28" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    fill="white" />
+            </svg>
+            <svg width="26" height="26" viewBox="0 0 24 24">
+                <polygon points="12 2 22 7 22 17 12 22 2 17 2 7" fill="white" />
+            </svg>
+        </div>
     </footer>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">&#10094;</button>
+        <img id="lightbox-img" class="lightbox-content" src="">
+        <button class="lightbox-next">&#10095;</button>
+    </div>
+    <div class="custom-cursor"></div>
     <script src="main.js"></script>
 </body>
+
 </html>
