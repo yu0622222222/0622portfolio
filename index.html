@@ -3,44 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Yu-Cheng</title>
+    <title>CORM | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- 使用 Archivo Black 作為具有衝擊力的標題字體，Inter 作為乾淨的內文字體 -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <!-- 使用 Archivo Black 作為標題字體，Inter 作為內文字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- 導航列 -->
     <header class="header">
-        <div class="logo">corm</div>
+        <a href="#hero" class="logo">corm</a>
         <nav class="nav">
+            <a href="#about">Home</a>
             <a href="#about">About</a>
-            <a href="#works">Works</a>
+            <a href="#overview">Works</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
-        <!-- Self Introduction 區塊 -->
-        <section id="about" class="intro-section reveal">
-            <div class="intro-heading">
-                <h1 class="huge-text">self<br>introduction</h1>
+        <!-- 區塊一：主視覺 (Hero) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-placeholder">
+                <span class="hero-text-overlay">CORM</span>
+                <span class="hero-desc">(Background Graphic Placeholder)</span>
             </div>
-            <div class="intro-content">
-                <div class="intro-image placeholder placeholder-cat">
-                    <span>(Cat Illustration)</span>
-                </div>
+        </section>
+
+        <!-- 區塊二：自我介紹 (Self Intro - Split Layout) -->
+        <section id="about" class="split-section">
+            <div class="split-left">
+                <h1 class="huge-text">SELF<br>INTRODUCTION</h1>
+                
                 <div class="intro-text">
-                    <p class="zh">你好，我是王予呈。<br>目前就讀媒體傳達設計系大一。對我而言，設計是一場在繁複世界中去蕪存菁的過程。我目前在嘗試數位插畫、動態影像及 3D 空間構築，透過視覺語彙去傳遞核心情感。目前特別關注與社會議題、生命經驗相關的視覺實驗，期許自己能透過跨媒介的嘗試，創作出富含思維深度的作品。</p>
+                    <p class="zh">你好，我是王予呈。<br><br>目前就讀媒體傳達設計系大一。對我而言，設計是一場在繁複世界中去蕪存菁的過程。我目前在嘗試數位插畫、動態影像及 3D 空間構築，透過視覺語彙去傳遞核心情感。目前特別關注與社會議題、生命經驗相關的視覺實驗，期許自己能透過跨媒介的嘗試，創作出富含思維深度的作品。</p>
                     <p class="en">Hi, I'm Yu-Cheng, a freshman majoring in Communications Design. To me, design is a process of cutting through the noise of a chaotic world. I am currently exploring digital illustration, motion graphics, and 3D space creation to convey core human emotions. Focusing on visual experiments inspired by social issues and life narratives, I aim to craft multi-disciplinary works with conceptual depth.</p>
+                </div>
+                
+                <div class="dots-indicator">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            
+            <div class="split-right">
+                <p class="en-side-text">Driven by conceptual depth.</p>
+                
+                <!-- 跨越邊界的貓咪插圖佔位 -->
+                <div class="overlapping-cat placeholder placeholder-outline">
+                    <span>(Cat Illustration Overlapping)</span>
+                </div>
+                
+                <p class="en-side-bottom">Built through late-night renders.</p>
+            </div>
+        </section>
+
+        <!-- 區塊三：專案總覽 (Project Overview) -->
+        <section id="overview" class="overview-section">
+            <!-- WORK 文字遮罩圖案 -->
+            <div class="text-mask-banner">
+                <h2 class="mask-text">WORK</h2>
+            </div>
+            
+            <div class="overview-info">
+                <div class="overview-title">
+                    <h2 class="section-heading">PROJECT<br>OVERVIEW</h2>
+                </div>
+                <div class="overview-details">
+                    <ul class="detail-list">
+                        <li><strong>Year：</strong> 2025~2026</li>
+                        <li><strong>Category：</strong>
+                            <ul>
+                                <li>海報：平面設計 / 社會議題 (Graphic Design / Social Issue)</li>
+                                <li>動畫：動態影像 / 2D 動畫 (Motion Graphics / 2D Animation)</li>
+                                <li>3D建模：Blender / 空間構築 (Environment Design)</li>
+                                <li>人體素描：視覺藝術 / 基礎訓練 (Visual Art / Life Drawing)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tools：</strong> Photoshop / Illustrator / Blender / Premiere Pro / 炭筆</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="works" class="works-section">
+        <!-- 區塊四：作品目錄 (Works Index) -->
+        <section id="works-index" class="index-section">
+            <h2 class="index-heading">WORKS</h2>
+            <div class="index-grid">
+                <a href="#project-1" class="index-link">
+                    <span class="index-num">01 /</span> 漸凍症 Amyotrophic Lateral Sclerosis
+                    <span class="index-desc">以留白與微觀解構生命痛處<br>Deconstructing life narratives through negative space.</span>
+                </a>
+                <a href="#project-2" class="index-link">
+                    <span class="index-num">02 /</span> 蚊子 mosquito
+                    <span class="index-desc">將貓咪日常轉化為動態分鏡<br>Translating feline routines into motion graphics.</span>
+                </a>
+                <a href="#project-3" class="index-link">
+                    <span class="index-num">03 /</span> 人體模特兒 nude model
+                    <span class="index-desc">歷時一年的肌肉線條觀察記錄。<br>A year-long observation of anatomical tension.</span>
+                </a>
+                <a href="#project-4" class="index-link">
+                    <span class="index-num">04 /</span> 房子建模 blender
+                    <span class="index-desc">數位線條與光影的空間構築。<br>Constructing 3D space with light and texture.</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 自動播放輪播區塊 (Auto-play Carousel) -->
+        <section class="carousel-section">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <!-- 原始組 -->
+                    <div class="carousel-card placeholder placeholder-light"><span>(Slide 1)</span></div>
+                    <div class="carousel-card placeholder placeholder-dark"><span>(Slide 2)</span></div>
+                    <div class="carousel-card placeholder placeholder-blue"><span>(Slide 3)</span></div>
+                    <div class="carousel-card placeholder placeholder-red"><span>(Slide 4)</span></div>
+                    <!-- 重複組 (為了無限滾動無縫銜接) -->
+                    <div class="carousel-card placeholder placeholder-light"><span>(Slide 1)</span></div>
+                    <div class="carousel-card placeholder placeholder-dark"><span>(Slide 2)</span></div>
+                    <div class="carousel-card placeholder placeholder-blue"><span>(Slide 3)</span></div>
+                    <div class="carousel-card placeholder placeholder-red"><span>(Slide 4)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 區塊五：作品詳細展示 (延續之前的瀑布流設計) -->
+        <section class="works-detail-section">
             
             <!-- Project 1: ALS -->
-            <article class="project reveal">
+            <article id="project-1" class="project reveal">
                 <div class="project-header">
                     <h2 class="project-title">ALS SOCIAL ISSUES POSTERS</h2>
                 </div>
@@ -56,7 +149,7 @@
             </article>
 
             <!-- Project 2: MOSQUITO -->
-            <article class="project reveal">
+            <article id="project-2" class="project reveal">
                 <div class="project-header">
                     <h2 class="project-title">MOSQUITO</h2>
                 </div>
@@ -74,7 +167,7 @@
             </article>
 
             <!-- Project 3: NUDE MODEL -->
-            <article class="project reveal">
+            <article id="project-3" class="project reveal">
                 <div class="project-header">
                     <h2 class="project-title">NUDE MODEL</h2>
                 </div>
